@@ -1,12 +1,9 @@
 package template.pageobjects.pages;
 
-import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
 
 import com.codeborne.selenide.SelenideElement;
-import io.cucumber.java.en.Then;
 import io.qameta.allure.Step;
 import template.pageobjects.components.WelcomeBlock;
 
