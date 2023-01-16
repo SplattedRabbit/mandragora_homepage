@@ -1,11 +1,11 @@
-package template.neodymium.tests.mandragora;
+package template.tests.mandragora;
 
 import org.junit.Test;
 
 import com.xceptance.neodymium.util.Neodymium;
 
 import template.flows.OpenPageFlows;
-import template.neodymium.tests.AbstractTest;
+import template.tests.AbstractTest;
 
 public class HomePageTest extends AbstractTest
 {

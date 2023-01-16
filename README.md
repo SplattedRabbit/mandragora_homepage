@@ -31,11 +31,11 @@ Furthermore, we've set up a [Neodymium Wiki](https://github.com/Xceptance/neodym
 
 
 ## Execution
-6. Run the `template.neodymium.tests.mandragora.HomePageTest.java` from the Neodymium package as JUnit test
+6. Run the `HomePageTest.java` from the Neodymium package as JUnit test
 
 ## Validate the World with Neodymium 
 7. Adjust the validation within the `template.pageObjects.pages.HomePage.java` to match the site that is going to be tested (only if you changed it)
-8. Run the `template.neodymium.tests.mandragora.HomePageTest.java` again
+8. Run the `HomePageTest.java` again
 
 ## Validate the World with Cucumber
 9. Run the `template.cucumber.tests.RunAllFeatures.java` from the Cucumber package as JUnit test

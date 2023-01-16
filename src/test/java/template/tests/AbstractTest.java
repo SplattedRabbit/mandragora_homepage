@@ -1,4 +1,4 @@
-package template.neodymium.tests;
+package template.tests;
 
 import org.junit.runner.RunWith;
 
