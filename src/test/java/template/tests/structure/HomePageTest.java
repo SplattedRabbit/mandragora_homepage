@@ -1,4 +1,4 @@
-package template.tests.mandragora;
+package template.tests.structure;
 
 import org.junit.Test;
 
