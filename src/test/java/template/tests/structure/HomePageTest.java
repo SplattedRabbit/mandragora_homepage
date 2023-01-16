@@ -19,7 +19,8 @@ public class HomePageTest extends AbstractTest
         homePage.validateStructure();
         homePage.title.validateTitle(Neodymium.localizedText("homepage.title"));
 
-        //validate the content on the homepage
+        //validate the content within the welcome block
         homePage.welcomeBlock.validateSocialMediaIcons();
+        homePage.welcomeBlock.validatePartnerIcons();
     }
 }

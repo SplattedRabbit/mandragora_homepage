@@ -1,4 +1,7 @@
 default:
   homepage:
     title: Homepage | Test Homepage | Mandragora Thuringia
+    partnerLinks:
+      mddRecords: MDD Records
+      pyramidStrings: Pyramid Strings
    
