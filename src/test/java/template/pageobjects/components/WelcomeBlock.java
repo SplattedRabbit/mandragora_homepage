@@ -70,7 +70,7 @@ public class WelcomeBlock extends AbstractComponent {
   }
 
   @Step("Stelle sicher, dass das welcome image korrekt angezeigt wird")
-  public void validateWelcomeImage() {
+  public void validateWelcomeContentBlock() {
     SelenideElement imageContainer = welcomeContent.$(" .image-container");
 
     welcomeContent

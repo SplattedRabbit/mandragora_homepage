@@ -7,7 +7,7 @@ import com.xceptance.neodymium.util.Neodymium;
 import template.flows.OpenPageFlows;
 import template.tests.AbstractTest;
 
-public class HomePageTest extends AbstractTest
+public class MainPageTest extends AbstractTest
 {
     @Test
     public void testMandragoraThuringiaHomepage()
@@ -21,7 +21,7 @@ public class HomePageTest extends AbstractTest
 
         //validate the content within the welcome block
         homePage.welcomeBlock.validateSocialMediaIcons();
-
+homePage.welcomeBlock.validateWelcomeContentBlock();
         homePage.welcomeBlock.validatePartnerIcons();
     }
 }
