@@ -10,7 +10,7 @@ import template.tests.AbstractTest;
 public class HomePageTest extends AbstractTest
 {
     @Test
-    public void testVisitingHomepage()
+    public void testMandragoraThuringiaHomepage()
     {
         // Goto the home page and perform a short validation that we are on the correct page
         var homePage = OpenPageFlows.openHomePage();
