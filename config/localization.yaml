@@ -1,6 +1,11 @@
 default:
   homepage:
     title: Homepage | Test Homepage | Mandragora Thuringia
+    navbar:
+      termine: Termine
+      band: Band
+      shop: Shop
+      kontakt: Kontakt
     partnerLinks:
       mddRecords: MDD Records
       pyramidStrings: Pyramid Strings

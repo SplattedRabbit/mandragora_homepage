@@ -45,28 +45,19 @@ public class WelcomeBlock extends AbstractComponent {
   public void validateSocialMediaIcons() {
 
     // validate the youtube icon
-    welcomeSocials
-        .$(" .fa-youtube")
-        .shouldBe(visible)
-        .shouldHave(new AttributeWithValue("href", youtubeLink));
+    welcomeSocials.$(" .fa-youtube").shouldBe(visible).shouldHave(attribute("href", youtubeLink));
 
     // validate the spotify icon
-    welcomeSocials
-        .$(" .fa-spotify")
-        .shouldBe(visible)
-        .shouldHave(new AttributeWithValue("href", spotifyLink));
+    welcomeSocials.$(" .fa-spotify").shouldBe(visible).shouldHave(attribute("href", spotifyLink));
 
     // validate the instagram icon
     welcomeSocials
         .$(" .fa-instagram")
         .shouldBe(visible)
-        .shouldHave(new AttributeWithValue("href", instagramLink));
+        .shouldHave(attribute("href", instagramLink));
 
     // validate the facebook icon
-    welcomeSocials
-        .$(" .fa-facebook")
-        .shouldBe(visible)
-        .shouldHave(new AttributeWithValue("href", facebookLink));
+    welcomeSocials.$(" .fa-facebook").shouldBe(visible).shouldHave(attribute("href", facebookLink));
   }
 
   @Step("Stelle sicher, dass das welcome image korrekt angezeigt wird")
@@ -78,7 +69,7 @@ public class WelcomeBlock extends AbstractComponent {
         .shouldHave(exactText(Neodymium.localizedText("homepage.welcomeContent.imageSubtitle")));
 
     imageContainer.shouldBe(visible);
-    imageContainer.$("img").shouldHave(cssValue("src", welcomeImageLink));
+    imageContainer.$("img").shouldHave(attribute("src", welcomeImageLink));
   }
 
   @Step("Stelle sicher, dass die Partner Icons korrekt angezeigt werden")
@@ -89,17 +80,14 @@ public class WelcomeBlock extends AbstractComponent {
     // validate the mdd-records icon
     partnerLinks
         .get(0)
-        .shouldHave(
-            new AttributeWithValue(
-                "title", Neodymium.localizedText("homepage.partnerLinks.mddRecords")))
-        .shouldHave(new AttributeWithValue("href", mddRecordsLink));
+        .shouldHave(attribute("title", Neodymium.localizedText("homepage.partnerLinks.mddRecords")))
+        .shouldHave(attribute("href", mddRecordsLink));
 
     // validate the pyramid strings icon
     partnerLinks
         .get(1)
         .shouldHave(
-            new AttributeWithValue(
-                "title", Neodymium.localizedText("homepage.partnerLinks.pyramidStrings")))
-        .shouldHave(new AttributeWithValue("href", pyramidStringsLink));
+            attribute("title", Neodymium.localizedText("homepage.partnerLinks.pyramidStrings")))
+        .shouldHave(attribute("href", pyramidStringsLink));
   }
 }
