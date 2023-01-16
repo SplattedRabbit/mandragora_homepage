@@ -4,4 +4,6 @@ default:
     partnerLinks:
       mddRecords: MDD Records
       pyramidStrings: Pyramid Strings
+    welcomeContent:
+      imageSubtitle:  Album Release – 04. November 2022
    

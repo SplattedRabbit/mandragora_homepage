@@ -21,6 +21,7 @@ public class HomePageTest extends AbstractTest
 
         //validate the content within the welcome block
         homePage.welcomeBlock.validateSocialMediaIcons();
+
         homePage.welcomeBlock.validatePartnerIcons();
     }
 }
