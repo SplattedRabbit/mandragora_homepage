@@ -1,9 +1,7 @@
 package template.tests.structure;
 
-import org.junit.Test;
-
 import com.xceptance.neodymium.util.Neodymium;
-
+import org.junit.Test;
 import template.flows.OpenPageFlows;
 import template.tests.AbstractTest;
 

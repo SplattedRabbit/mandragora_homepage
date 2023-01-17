@@ -1,13 +1,13 @@
 package template.pageobjects.pages;
 
-import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selenide.$;
-
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import template.pageobjects.components.homepage.Header;
-import template.pageobjects.components.homepage.NavigationBar;
 import template.pageobjects.components.homepage.WelcomeBlock;
+
+import static com.codeborne.selenide.Condition.attribute;
+import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Selenide.$;
 
 public class HomePage extends AbstractPageObject {
 

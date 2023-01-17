@@ -1,6 +1,5 @@
 package template.pageobjects.components.homepage;
 
-import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;
 import template.pageobjects.components.AbstractComponent;
 
