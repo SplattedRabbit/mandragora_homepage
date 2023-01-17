@@ -7,6 +7,7 @@ import com.xceptance.neodymium.util.Neodymium;
 import io.qameta.allure.Step;
 import template.pageobjects.components.AbstractComponent;
 
+import static com.codeborne.selenide.CollectionCondition.size;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 
@@ -77,7 +78,7 @@ public class WelcomeBlock extends AbstractComponent {
   @Step("Stelle sicher, dass die Partner Icons korrekt angezeigt werden")
   public void validatePartnerIcons() {
     ElementsCollection partnerLinks = welcomePartners.$$(" .partner-link");
-    partnerLinks.shouldHave(CollectionCondition.size(2));
+    partnerLinks.shouldHave(size(2));
 
     // validate the mdd-records icon
     partnerLinks
