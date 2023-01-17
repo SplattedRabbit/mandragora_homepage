@@ -1,9 +1,10 @@
-package template.pageobjects.components;
+package template.pageobjects.components.homepage;
 
 import com.codeborne.selenide.*;
 import com.codeborne.selenide.conditions.AttributeWithValue;
 import com.xceptance.neodymium.util.Neodymium;
 import io.qameta.allure.Step;
+import template.pageobjects.components.AbstractComponent;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;

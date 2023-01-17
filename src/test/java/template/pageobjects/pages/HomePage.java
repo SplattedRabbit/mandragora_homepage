@@ -4,16 +4,16 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.conditions.AttributeWithValue;
 import io.qameta.allure.Step;
-import template.pageobjects.components.NavigationBar;
-import template.pageobjects.components.WelcomeBlock;
+import template.pageobjects.components.homepage.Header;
+import template.pageobjects.components.homepage.NavigationBar;
+import template.pageobjects.components.homepage.WelcomeBlock;
 
 public class HomePage extends AbstractPageObject {
 
-  public WelcomeBlock welcomeBlock = new WelcomeBlock();
+  public Header pageHeader = new Header();
 
-  public NavigationBar navigationBar = new NavigationBar();
+  public WelcomeBlock welcomeBlock = new WelcomeBlock();
 
   private String headerImage = "https://test.mandragora-thuringia.de/wp-content/themes/mandragora/static/images/rex/MT_Rex-Logo_web.webp";
 
@@ -32,7 +32,7 @@ public class HomePage extends AbstractPageObject {
   public void validateStructure() {
     super.validateStructure();
     $(".header-image").shouldHave(attribute("src", headerImage));
-    navigationBar.isComponentAvailable();
+    pageHeader.isComponentAvailable();
     welcomeBlock.isComponentAvailable();
   }
 }

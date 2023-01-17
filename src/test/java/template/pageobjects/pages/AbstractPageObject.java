@@ -1,6 +1,6 @@
 package template.pageobjects.pages;
 
-import template.pageobjects.components.Title;
+import template.pageobjects.components.homepage.Title;
 
 /**
  * @author pfotenhauer

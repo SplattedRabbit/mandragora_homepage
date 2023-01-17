@@ -18,7 +18,7 @@ public class MainPageTest extends AbstractTest {
     homePage.validateStructure();
 
     // validate the navigation bar
-    homePage.navigationBar.validateMenubar();
+    homePage.pageHeader.navigationBar.validateMenubar();
 
     // validate the content within the welcome block
     homePage.welcomeBlock.validateSocialMediaIcons();
