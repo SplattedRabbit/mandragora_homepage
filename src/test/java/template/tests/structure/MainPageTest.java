@@ -22,5 +22,9 @@ public class MainPageTest extends AbstractTest {
     homePage.welcomeBlock.validateSocialMediaIcons();
     homePage.welcomeBlock.validateWelcomeContentBlock();
     homePage.welcomeBlock.validatePartnerIcons();
+
+    // validate the content within the tour dates block
+    homePage.tourDates.isComponentAvailable();
+    homePage.tourDates.validateTourdates();
   }
 }

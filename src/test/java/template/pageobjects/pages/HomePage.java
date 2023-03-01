@@ -3,6 +3,7 @@ package template.pageobjects.pages;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import template.pageobjects.components.homepage.Header;
+import template.pageobjects.components.homepage.Tourdates;
 import template.pageobjects.components.homepage.WelcomeBlock;
 
 import static com.codeborne.selenide.Condition.attribute;
@@ -14,6 +15,8 @@ public class HomePage extends AbstractPageObject {
   public Header pageHeader = new Header();
 
   public WelcomeBlock welcomeBlock = new WelcomeBlock();
+
+  public Tourdates tourDates = new Tourdates();
 
   private String headerImage = "https://test.mandragora-thuringia.de/wp-content/themes/mandragora/static/images/rex/MT_Rex-Logo_web.webp";
 
@@ -32,7 +35,7 @@ public class HomePage extends AbstractPageObject {
   public void validateStructure() {
     super.validateStructure();
     $(".header-image").shouldHave(attribute("src", headerImage));
-    pageHeader.isComponentAvailable();
+    pageHeader.validatePageHeader();
     welcomeBlock.isComponentAvailable();
   }
 }
