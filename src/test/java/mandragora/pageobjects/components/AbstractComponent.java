@@ -1,4 +1,4 @@
-package template.pageobjects.components;
+package mandragora.pageobjects.components;
 
 public abstract class AbstractComponent
 {

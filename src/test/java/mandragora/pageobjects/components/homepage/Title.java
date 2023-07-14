@@ -1,4 +1,4 @@
-package template.pageobjects.components.homepage;
+package mandragora.pageobjects.components.homepage;
 
 import org.junit.Assert;
 
@@ -6,9 +6,8 @@ import com.xceptance.neodymium.util.SelenideAddons;
 
 import static com.codeborne.selenide.Selenide.title;
 
-import io.cucumber.java.en.Then;
 import io.qameta.allure.Step;
-import template.pageobjects.components.AbstractComponent;
+import mandragora.pageobjects.components.AbstractComponent;
 
 public class Title extends AbstractComponent {
   public void isComponentAvailable() {}

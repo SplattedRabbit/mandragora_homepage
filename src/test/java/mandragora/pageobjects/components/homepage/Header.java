@@ -1,7 +1,7 @@
-package template.pageobjects.components.homepage;
+package mandragora.pageobjects.components.homepage;
 
 import io.qameta.allure.Step;
-import template.pageobjects.components.AbstractComponent;
+import mandragora.pageobjects.components.AbstractComponent;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;

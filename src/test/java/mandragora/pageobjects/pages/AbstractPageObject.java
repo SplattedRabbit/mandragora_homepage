@@ -1,6 +1,6 @@
-package template.pageobjects.pages;
+package mandragora.pageobjects.pages;
 
-import template.pageobjects.components.homepage.Title;
+import mandragora.pageobjects.components.homepage.Title;
 
 /**
  * @author pfotenhauer

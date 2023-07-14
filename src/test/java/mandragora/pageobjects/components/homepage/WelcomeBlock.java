@@ -1,11 +1,10 @@
-package template.pageobjects.components.homepage;
+package mandragora.pageobjects.components.homepage;
 
-import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import com.xceptance.neodymium.util.Neodymium;
 import io.qameta.allure.Step;
-import template.pageobjects.components.AbstractComponent;
+import mandragora.pageobjects.components.AbstractComponent;
 
 import static com.codeborne.selenide.CollectionCondition.size;
 import static com.codeborne.selenide.Condition.*;

@@ -98,7 +98,7 @@
             <configuration>
               <includes>
                 <!-- Neodymium (pure Java) test cases -->
-                <include>template/neodymium/tests/**/*Test.java</include>
+                <include>mandragora/neodymium/tests/**/*Test.java</include>
               </includes>
               <properties>
                 <property>
@@ -121,7 +121,7 @@
             <configuration>
               <includes>
                 <!-- Cucumber test cases -->
-                <include>template/cucumber/tests/RunAllFeaturesTest.java</include>
+                <include>mandragora/cucumber/tests/RunAllFeaturesTest.java</include>
               </includes>
             </configuration>
           </plugin>

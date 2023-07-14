@@ -1,5 +1,5 @@
 # Introduction
-This repository is supposed to be used as a template for test automation projects using [Neodymium Library](https://github.com/Xceptance/neodymium-library). It contains both a pure Java and a Cucumber approach. It is a test automation template based on best practice libraries and added missing functionalities designed to aid test automation done by Xceptance.
+This repository is supposed to be used as a mandragora for test automation projects using [Neodymium Library](https://github.com/Xceptance/neodymium-library). It contains both a pure Java and a Cucumber approach. It is a test automation mandragora based on best practice libraries and added missing functionalities designed to aid test automation done by Xceptance.
 
 # Getting familiar
 Please perform the Hello World tutorial first to get a first insight and feeling for test automation with Neodymium.
@@ -34,29 +34,29 @@ Furthermore, we've set up a [Neodymium Wiki](https://github.com/Xceptance/neodym
 6. Run the `HomePageTest.java` from the Neodymium package as JUnit test
 
 ## Validate the World with Neodymium 
-7. Adjust the validation within the `template.pageObjects.pages.HomePage.java` to match the site that is going to be tested (only if you changed it)
+7. Adjust the validation within the `mandragora.pageObjects.pages.HomePage.java` to match the site that is going to be tested (only if you changed it)
 8. Run the `HomePageTest.java` again
 
 ## Validate the World with Cucumber
-9. Run the `template.cucumber.tests.RunAllFeatures.java` from the Cucumber package as JUnit test
+9. Run the `mandragora.cucumber.tests.RunAllFeatures.java` from the Cucumber package as JUnit test
 
 # Taking ownership 
-If you want to adopt the template for your own project, you'll want to change the template folder to something more project specific.
+If you want to adopt the mandragora for your own project, you'll want to change the mandragora folder to something more project specific.
 Please perform the following steps to rename it:
-1. Rename the `template` package to a name of your choice
+1. Rename the `mandragora` package to a name of your choice
 2. Update the `pom.xml` (especially the Surefire configuration that states which tests should be executed)
-3. Update the `@CucumberOptions` within `template.cucumber.tests.RunAllTests.java` to have the new path in features and glue
+3. Update the `@CucumberOptions` within `mandragora.cucumber.tests.RunAllTests.java` to have the new path in features and glue
 
 # Remove the unneeded code approach
-After you have decided whether you want to go the pure Java or the Cucumber way. You can simply delete the folder of the unused approach (either `src/test/java/template/neodymium` or `src/test/java/template/cucumber`).
+After you have decided whether you want to go the pure Java or the Cucumber way. You can simply delete the folder of the unused approach (either `src/test/java/mandragora/neodymium` or `src/test/java/mandragora/cucumber`).
 If you like you can also clean up the Surefire configuration in the `pom.xml` by removing the now unused `<include>` path.
 
 ```XML
 <includes>
     <!-- Neodymium (pure Java) test cases -->
-    <include>template/neodymium/tests/**/*Test.java</include>
+    <include>mandragora/neodymium/tests/**/*Test.java</include>
     <!-- Cucumber test cases -->
-    <include>template/cucumber/tests/RunAllFeaturesTest.java</include>
+    <include>mandragora/cucumber/tests/RunAllFeaturesTest.java</include>
 </includes>
 ```
 

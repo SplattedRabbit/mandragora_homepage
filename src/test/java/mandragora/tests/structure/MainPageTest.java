@@ -1,9 +1,9 @@
-package template.tests.structure;
+package mandragora.tests.structure;
 
 import com.xceptance.neodymium.util.Neodymium;
 import org.junit.Test;
-import template.flows.OpenPageFlows;
-import template.tests.AbstractTest;
+import mandragora.flows.OpenPageFlows;
+import mandragora.tests.AbstractTest;
 
 public class MainPageTest extends AbstractTest {
   @Test

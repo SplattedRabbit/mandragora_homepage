@@ -1,10 +1,10 @@
-package template.pageobjects.pages;
+package mandragora.pageobjects.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import template.pageobjects.components.homepage.Header;
-import template.pageobjects.components.homepage.Tourdates;
-import template.pageobjects.components.homepage.WelcomeBlock;
+import mandragora.pageobjects.components.homepage.Header;
+import mandragora.pageobjects.components.homepage.Tourdates;
+import mandragora.pageobjects.components.homepage.WelcomeBlock;
 
 import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Condition.visible;

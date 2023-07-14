@@ -1,4 +1,4 @@
-package template.tests;
+package mandragora.tests;
 
 import org.junit.runner.RunWith;
 
