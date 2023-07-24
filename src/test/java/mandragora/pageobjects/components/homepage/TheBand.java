@@ -41,7 +41,6 @@ public class TheBand extends AbstractComponent {
               + ": "
               + bandmembers.get(i).getInstrument();
       var image = imageGallery.get(i).$(".fbx-link").should(exist);
-
       image.shouldHave(attribute("data-caption-title", dataValue));
     }
   }
