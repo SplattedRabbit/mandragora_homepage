@@ -1,0 +1,41 @@
+{
+  "bandmembers": [
+    {
+      "firstName": "Andor",
+      "lastName": "Koppelin",
+      "instrument": "Gesang"
+    },
+    {
+      "firstName": "Carlo",
+      "lastName": "Reiter",
+      "instrument": "Dudelsack"
+    },
+    {
+      "firstName": "Moritz",
+      "lastName": "Engler",
+      "instrument": "Gitarre"
+    },
+    {
+      "firstName": "Erik",
+      "lastName": "Schröter",
+      "instrument": "Gitarre"
+    },
+    {
+      "firstName": "Juls",
+      "lastName": "Styles",
+      "instrument": "Bass"
+    },
+    {
+      "firstName": "Juan",
+      "lastName": "Grüning",
+      "instrument": "Keyboards und Synthesizer"
+    },
+    {
+      "firstName": "Kone",
+      "lastName": "Bogsch",
+      "instrument": "Schlagzeug und Percussion"
+    }
+
+
+  ]
+}
