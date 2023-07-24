@@ -3,6 +3,7 @@ package mandragora.pageobjects.pages;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import mandragora.pageobjects.components.homepage.Header;
+import mandragora.pageobjects.components.homepage.TheBand;
 import mandragora.pageobjects.components.homepage.Tourdates;
 import mandragora.pageobjects.components.homepage.WelcomeBlock;
 
@@ -17,6 +18,8 @@ public class HomePage extends AbstractPageObject {
   public WelcomeBlock welcomeBlock = new WelcomeBlock();
 
   public Tourdates tourDates = new Tourdates();
+
+  public TheBand theBand = new TheBand();
 
   private String headerImage = "https://test.mandragora-thuringia.de/wp-content/themes/mandragora/static/images/rex/MT_Rex-Logo_web.webp";
 

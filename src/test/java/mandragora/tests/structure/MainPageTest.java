@@ -3,6 +3,7 @@ package mandragora.tests.structure;
 import com.xceptance.neodymium.util.DataUtils;
 import com.xceptance.neodymium.util.Neodymium;
 import mandragora.dataobjects.MainPageTestdata;
+import org.junit.Before;
 import org.junit.Test;
 import mandragora.flows.OpenPageFlows;
 import mandragora.tests.AbstractTest;
@@ -10,10 +11,13 @@ import mandragora.tests.AbstractTest;
 public class MainPageTest extends AbstractTest {
 
   protected MainPageTestdata testdata;
+
+  @Before
+  public void before(){
+    testdata = DataUtils.get(MainPageTestdata.class);
+  }
   @Test
   public void testMandragoraThuringiaHomepage() {
-    // Setup testdata
-    testdata = DataUtils.get(MainPageTestdata.class);
 
     // Goto the home page and perform a short validation that we are on the correct page
     var homePage = OpenPageFlows.openHomePage();
