@@ -22,6 +22,9 @@ public class PhotoGallery extends AbstractComponent {
   @Override
   @Step("Stelle sicher, dass die Fotogallerie korrekt angezeigt wird")
   public void isComponentAvailable() {
+
+    //TODO add availability-check for the individual galleries
+
     // This is not the optimal solution but the title is to generic and as no identifier to find it
     // but it ensures the visibility of the gallery title
     ElementsCollection allTitles = $$("h2.wp-block-heading");
