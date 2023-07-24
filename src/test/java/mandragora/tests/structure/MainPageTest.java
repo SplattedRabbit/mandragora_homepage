@@ -42,5 +42,13 @@ public class MainPageTest extends AbstractTest {
     // validate the content within the 'the band' block
     homePage.theBand.isComponentAvailable();
     homePage.theBand.validateGallery(testdata.getBandmembers());
+
+    // validate the band biography
+    homePage.biography.isComponentAvailable();
+    homePage.biography.validateBiography();
+
+    // validate the photogallery
+    homePage.photoGallery.isComponentAvailable();
+    homePage.photoGallery.validatePhotoGallery();
   }
 }
