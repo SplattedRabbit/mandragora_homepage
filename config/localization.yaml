@@ -10,7 +10,14 @@ default:
       mddRecords: MDD Records
       pyramidStrings: Pyramid Strings
     welcomeContent:
-      imageSubtitle:  Album Release – 04. November 2022
+      imageSubtitle: Album Release – 04. November 2022
     tourdates:
       headline: Termine
-   
+    theBand:
+      andor: Andor. Die Stimme und die Frontsau der Band. Er heizt euch vorne so sehr ein, bis er selbst sein Hemd ausziehen muss. Instrument
+      carlo: Carlo. Auch bekannt als Dudeltrieb ist unser verrückter, kleiner Wissenschaftler immer für eine elektrische Überraschungsspielerei gut und zaubert gerne mal das eine oder andere Gadget hervor! Instrument
+      moritz: Moritz. Nicht nur seine schnellen Soli strotzen vor Kraft – Er ist außerdem der Mann, der bei schweren Dingen jeden aus dem Weg schiebt, um alles allein tragen zu dürfen. Instrument
+      erik: Erik. Erik – auch Saitentöter genannt – drückt mit seinem Rhythmussound gern mal alles an die Seite was vor ihm steht; zum Leid von Moritz auch seine Soli! Instrument
+      juls: Juls. Wenn es brummt und grummelt, ist er da. Am Bass schenkt er euch den nötigen Druck, den jeder Metalsong braucht! Instrument
+      juan: Juan. Als tragende Säule unserer Melodie-Fraktion und Federführender im Songwriting schreibt er sogar mehr, als wir in Songs verarbeiten können. Instrument
+      kone: Kone. Neben dem Fundament am Schlagzeug, entführt er euch mit seinen Songtexten in die fernsten Welten und nimmt euch mit zu fantastischen Abenteuern. Instrument

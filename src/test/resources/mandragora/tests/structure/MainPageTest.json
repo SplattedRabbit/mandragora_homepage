@@ -1,10 +1,10 @@
 [
   {
-  "bandmembers": [
+    "bandmembers": [
       {
         "firstName": "Andor",
         "lastName": "Koppelin",
-        "instrument": "Gesang"
+        "instrument": "Leadgesang"
       },
       {
         "firstName": "Carlo",
@@ -14,28 +14,28 @@
       {
         "firstName": "Moritz",
         "lastName": "Engler",
-        "instrument": "Gitarre"
+        "instrument": "Leadgitarre, Backingvocals"
       },
       {
         "firstName": "Erik",
         "lastName": "Schröter",
-        "instrument": "Gitarre"
+        "instrument": "Rhythmusgitarre, Backingvocals"
       },
       {
         "firstName": "Juls",
         "lastName": "Styles",
-        "instrument": "Bass"
+        "instrument": "Bassgitarre, Backingvocals"
       },
       {
         "firstName": "Juan",
         "lastName": "Grüning",
-        "instrument": "Keyboards und Synthesizer"
+        "instrument": "Synthesizer, V-Akkordeon, Keytar"
       },
       {
         "firstName": "Kone",
         "lastName": "Bogsch",
-        "instrument": "Schlagzeug und Percussion"
+        "instrument": "Schlagzeug"
       }
-      ]
+    ]
   }
 ]
