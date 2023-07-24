@@ -19,10 +19,9 @@ public class MainPageTest extends AbstractTest {
 
   @Test
   public void testMandragoraThuringiaHomepage() {
-
     // Goto the home page and perform a short validation that we are on the correct page
     var homePage = OpenPageFlows.openHomePage();
-    var test = testdata.getTestValue();
+
     // basic validation
     homePage.title.validateTitle(Neodymium.localizedText("homepage.title"));
     homePage.validateStructure();
