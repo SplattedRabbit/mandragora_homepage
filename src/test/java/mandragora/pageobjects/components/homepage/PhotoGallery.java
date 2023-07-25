@@ -6,13 +6,11 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
-import com.codeborne.selenide.CollectionCondition;
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import com.xceptance.neodymium.util.Neodymium;
 import io.qameta.allure.Step;
+import mandragora.dataobjects.MainPageTestdata;
 import mandragora.pageobjects.components.AbstractComponent;
 
 public class PhotoGallery extends AbstractComponent {
@@ -38,7 +36,7 @@ public class PhotoGallery extends AbstractComponent {
   }
 
   @Step("Validiere die Darstellung der Fotogallerie")
-  public void validatePhotoGallery() {
+  public void validatePhotoGallery(MainPageTestdata testdata) {
     ElementsCollection allGalleries = $$("h3.wp-block-heading");
 
     SelenideElement meadAndGreedGallery = allGalleries.get(0);
@@ -46,10 +44,12 @@ public class PhotoGallery extends AbstractComponent {
 
     meadAndGreedGallery.shouldHave(
         exactText(Neodymium.localizedText("homepage.photoGalleries.meadAndGreed")));
-    $("#foogallery-gallery-4770").$$(".fg-type-image").shouldHave(size(13));
+    $("#foogallery-gallery-4770").$$(".fg-type-image")
+        .shouldHave(size(testdata.getNumberOfMeadAndGreedImages()));
 
     mahlstromGallery.shouldHave(
         exactText(Neodymium.localizedText("homepage.photoGalleries.mahlstrom")));
-    $("#foogallery-gallery-4560").$$(".fg-type-image").shouldHave(size(14));
+    $("#foogallery-gallery-4560").$$(".fg-type-image")
+        .shouldHave(size(testdata.getNumberOfMahlstromImages()));
   }
 }

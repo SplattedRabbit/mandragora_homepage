@@ -31,5 +31,7 @@ public class Merchandise extends AbstractComponent {
   @Step("Validiere den Inhalt der Merchandise-Sektion")
   public void validateMerchandise(){
 
+
+
   }
 }

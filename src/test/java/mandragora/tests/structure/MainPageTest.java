@@ -3,10 +3,10 @@ package mandragora.tests.structure;
 import com.xceptance.neodymium.util.DataUtils;
 import com.xceptance.neodymium.util.Neodymium;
 import mandragora.dataobjects.MainPageTestdata;
-import org.junit.Before;
-import org.junit.Test;
 import mandragora.flows.OpenPageFlows;
 import mandragora.tests.AbstractTest;
+import org.junit.Before;
+import org.junit.Test;
 
 public class MainPageTest extends AbstractTest {
 
@@ -48,6 +48,10 @@ public class MainPageTest extends AbstractTest {
 
     // validate the photogallery
     homePage.photoGallery.isComponentAvailable();
-    homePage.photoGallery.validatePhotoGallery();
+    homePage.photoGallery.validatePhotoGallery(testdata);
+
+    // validate the merchandise section
+    homePage.merchandise.isComponentAvailable();
+    homePage.merchandise.validateMerchandise();
   }
 }
