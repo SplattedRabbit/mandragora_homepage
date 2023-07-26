@@ -38,6 +38,26 @@
       }
     ],
     "numberOfMeadAndGreedImages": 13,
-    "numberOfMahlstromImages": 14
+    "numberOfMahlstromImages": 14,
+    "merchPreview": {
+      "Falkenflug-Girlie-Shirt": {
+        "itemType": "TSHIRT",
+        "price": "10,00 €",
+        "colour": "schwarz",
+        "size": "S"
+      },
+      "Falkenflug-T-Shirt": {
+        "itemType": "TSHIRT",
+        "price": "10,00 €",
+        "colour": "schwarz/weiß",
+        "size": "L"
+      },
+      "Krake-Hoodie": {
+        "itemType": "HOODIE",
+        "price": "25,00 €",
+        "colour": "schwarz",
+        "size": "XL"
+      }
+    }
   }
 ]
