@@ -3,7 +3,7 @@ package mandragora.pageobjects.pages;
 public class ShopItemPage extends AbstractPageObject{
 
   @Override
-  public AbstractPageObject isExpectedPage() {
+  public ShopItemPage isExpectedPage() {
     return this;
   }
 }
