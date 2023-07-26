@@ -1,5 +1,34 @@
 [
   {
-
+    "shopItems": [
+      {
+        "shopItem": "Falkenflug-Girlie-Shirt",
+        "itemType": "TSHIRT",
+        "price": "10,00 €",
+        "colour": "schwarz",
+        "size": "S"
+      },
+      {
+        "shopItem": "Falkenflug-T-Shirt",
+        "itemType": "TSHIRT",
+        "price": "10,00 €",
+        "colour": "schwarz/weiß",
+        "size": "L"
+      },
+      {
+        "shopItem": "Krake-Hoodie",
+        "itemType": "HOODIE",
+        "price": "25,00 €",
+        "colour": "schwarz",
+        "size": "XL"
+      },
+      {
+        "shopItem": "Der-Vagabund-Download",
+        "itemType": "DOWNLOAD",
+        "price": "12,99€ ",
+        "colour": null,
+        "size": null
+      }
+    ]
   }
 ]
