@@ -7,6 +7,7 @@ import io.qameta.allure.Step;
 public class ShopPage extends AbstractPageObject {
 
   @Override
+  @Step("Stelle sicher, dass der Shop korrekt dargestellt wird")
   public ShopPage isExpectedPage() {
     return this;
   }

@@ -22,8 +22,11 @@ public class CheckoutDigitalDownloadTest extends AbstractTest {
     var homePage = OpenPageFlows.openHomePage();
     String productName = null;
 
-    // navigate to the shop
+    // navigate to the shop, get the desired item from testdata and navigate to the product in the Shop
     var shop = homePage.pageHeader.navigationBar.openShop();
-    var productPage = shop.goToProductPage(testdata.getShopItemByItemname(testdata.getShopItemName()).getShopItem());
+    var shopItem = testdata.getShopItemByItemname(testdata.getShopItemName());
+
+    var productPage = shop.goToProductPage(shopItem.getShopItem());
+    var shoppingCart = productPage.addToShoppingCart(shopItem.getShopItem());
   }
 }
