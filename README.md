@@ -9,6 +9,7 @@ Technologies used:<br>
 Explanation:<br>
 This Testsuite was initially a sandbox-playground to fiddle around with new ideas for automated E2E-Tests. By now it has grown to a productive Testsuite for the Bandshop of my Band "Mandragora Thuringia"<br>
 It is developed by only myself except the Mailhog-API. Credits herefor go to Marcel Pfotenhauer who helped me building the API.<br>
+There are two contributing accounts but both are mine. One I used during work downtime and my private account. <br>
 <br>
 <br>
 
