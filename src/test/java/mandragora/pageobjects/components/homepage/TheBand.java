@@ -2,19 +2,16 @@ package mandragora.pageobjects.components.homepage;
 
 import static com.codeborne.selenide.CollectionCondition.size;
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Condition.image;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
+
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.conditions.Attribute;
 import com.xceptance.neodymium.util.Neodymium;
 import io.qameta.allure.Step;
+import java.util.List;
 import mandragora.dataobjects.Bandmember;
 import mandragora.pageobjects.components.AbstractComponent;
-
-import java.util.List;
-import java.util.Locale;
 
 public class TheBand extends AbstractComponent {
 

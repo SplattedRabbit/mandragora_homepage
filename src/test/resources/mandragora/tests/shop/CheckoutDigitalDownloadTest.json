@@ -1,5 +1,21 @@
 [
   {
-    "shopItemName": "Der-Vagabund-Download"
+    "shopItemName": "Der-Vagabund-Download",
+    "customerData": {
+      "firstName": "Justus",
+      "lastName": "Jonas",
+      "companyName": "Die drei ???",
+      "adress": {
+        "street": "Sunrise Road",
+        "housenumber": "45",
+        "zipCode": "72336",
+        "city": "Balingen",
+        "federalState": "Baden-Württemberg"
+      },
+      "telephoneNumber": "+49-(0)30-13888-0",
+      "mailAdress": "justus.jonas@dreiFragezeichen.de",
+      "additionalInfo": "Du bist ein sehr misstrauischer und neugieriger junger Mann. Du liebst das Geheimnis. Aber nur solange du es lüften kannst. Dinge oder Ereignisse, die sich nicht logisch erklären lassen, kannst du nicht akzeptieren."
+    },
+    "paymentMethod": "PAYPAL"
   }
 ]

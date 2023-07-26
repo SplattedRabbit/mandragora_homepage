@@ -28,5 +28,10 @@ public class CheckoutDigitalDownloadTest extends AbstractTest {
 
     var productPage = shop.goToProductPage(shopItem.getShopItem());
     var shoppingCart = productPage.addToShoppingCart(shopItem.getShopItem());
+
+    var checkoutPage = shoppingCart.goToCheckout();
+    checkoutPage.enterShippingData(testdata.getCustomerData());
+
+    checkoutPage.choosePaymentMethod(testdata.getPaymentMethod());
   }
 }

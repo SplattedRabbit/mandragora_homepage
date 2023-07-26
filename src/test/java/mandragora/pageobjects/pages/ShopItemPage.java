@@ -16,7 +16,7 @@ public class ShopItemPage extends AbstractPageObject {
   @Step("Füre '{shopItem}' zum Warenkorb hinzu")
   public ShoppingCartPage addToShoppingCart(String shopItem) {
     $(".single_add_to_cart_button").shouldHave(
-        exactText(Neodymium.localizedText("shop.shoppingCart"))).click();
+        exactText(Neodymium.localizedText("shop.shoppingCartButton"))).click();
     return new ShoppingCartPage().isExpectedPage();
   }
 }
