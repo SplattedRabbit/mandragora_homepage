@@ -35,6 +35,6 @@ public class CheckoutDigitalDownloadTest extends AbstractTest {
 
     checkoutPage.acceptTerms();
     checkoutPage.choosePaymentMethod(testdata.getPaymentMethod());
-
+    //comment
   }
 }
