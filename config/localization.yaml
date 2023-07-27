@@ -33,3 +33,5 @@ default:
   shop:
     shoppingCartTitle: Warenkorb
     shoppingCartButton: In den Warenkorb
+    paypal:
+      loginPage: Bei PayPal einloggen
