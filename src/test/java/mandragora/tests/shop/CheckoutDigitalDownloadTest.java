@@ -1,5 +1,6 @@
 package mandragora.tests.shop;
 
+import com.codeborne.selenide.Selenide;
 import com.xceptance.neodymium.util.DataUtils;
 import mandragora.dataobjects.CheckoutDigitalDownloadTestdata;
 import mandragora.flows.OpenPageFlows;
@@ -32,6 +33,8 @@ public class CheckoutDigitalDownloadTest extends AbstractTest {
     var checkoutPage = shoppingCart.goToCheckout();
     checkoutPage.enterShippingData(testdata.getCustomerData());
 
+    checkoutPage.acceptTerms();
     checkoutPage.choosePaymentMethod(testdata.getPaymentMethod());
+
   }
 }

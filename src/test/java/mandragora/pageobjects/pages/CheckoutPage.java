@@ -3,16 +3,13 @@ package mandragora.pageobjects.pages;
 import static com.codeborne.selenide.CollectionCondition.size;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
-
-import com.codeborne.selenide.CollectionCondition;
-import com.codeborne.selenide.Driver;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
-import com.xceptance.neodymium.util.Neodymium;
 import io.qameta.allure.Step;
 import mandragora.dataobjects.Adress;
 import mandragora.dataobjects.CustomerData;
 import mandragora.dataobjects.PaymentMethods;
+import org.openqa.selenium.By;
 
 public class CheckoutPage extends AbstractPageObject {
 
@@ -50,10 +47,14 @@ public class CheckoutPage extends AbstractPageObject {
     billingFields.$("#billing_email").val(customerData.getMailAdress());
   }
 
-  public void choosePaymentMethod(PaymentMethods paymentMethod){
+  public void acceptTerms(){
+    $("input#legal").click();
+    $("input#data-download").click();
+  }
+
+  public void choosePaymentMethod(PaymentMethods paymentMethod) {
     SelenideElement payment = $("#payment");
     SelenideElement paypalServices = $("input#payment_method_ppcp-gateway");
-
 
     switch (paymentMethod) {
       case VORKASSE:
@@ -61,9 +62,11 @@ public class CheckoutPage extends AbstractPageObject {
         break;
       case PAYPAL:
         paypalServices.click();
-        Selenide.switchTo().frame(0);
-        SelenideElement paypalButtonContainer = $(".ppc-button-wrapper .paypal-button-container");
-        paypalButtonContainer.$(".paypal-button-number-0 .paypal-logo").click();
+        var paymentFrame = Selenide.switchTo().frame(0);
+        var paypalButtonContainer = paymentFrame.findElement(
+            By.cssSelector(".paypal-button-container"));
+        paypalButtonContainer.findElement(By.cssSelector(".paypal-button-number-0"))
+            .click();
         break;
       case SEPA:
         paypalServices.click();
